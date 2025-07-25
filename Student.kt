@@ -31,3 +31,14 @@ package com.example.helloworld
 class Student:Person{  //此时因为无主构造函数 所以无括号
     constructor(name:String,age:Int):super(name,age){}
 }
+
+//接口
+class Student (name:String,age:Int):Person(name,age),Study{
+    override fun readBooks() {
+        println(name+" is reading.")
+    }
+
+//    override fun doHomework() {
+//        println(name+" is doing homework.")
+//    }
+}
